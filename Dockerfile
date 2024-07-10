@@ -19,7 +19,7 @@ RUN chmod -R 755 /app
 RUN npm run build
 
 # Expone el puerto en el que la aplicación se ejecutará
-EXPOSE 3000
+EXPOSE 4321
 
 # Define el comando para ejecutar la aplicación
 CMD ["npm", "start"]
