@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plus Cover</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Front end Home y Extra</h1>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Conoce nuestras colecciones de suelos y revestimientos</h2>
+        </section>
+        <section class="novedades">
+            <h2>Novedades</h2>
+        </section>
+        <section class="razones">
+            <h2>Razones para elegir tu suelo con Plus Cover</h2>
+            <ul>
+                <li>Ecover</li>
+                <li>Vycover</li>
+                <li>Corkcover</li>
+                <li>Deckcover</li>
+                <li>Woodcover</li>
+                <li>Bamcover</li>
+                <li>Undercover</li>
+            </ul>
+        </section>
+        <section class="colecciones">
+            <article class="coleccion">
+                <h3>Vycover</h3>
+                <p>Cómodo, resistente al agua, durable y con una estética muy cuidada. La última revolución en suelos.</p>
+            </article>
+            <article class="coleccion">
+                <h3>Ecover</h3>
+                <p>Un material ecológico y versátil que multiplica las posibilidades estéticas y funcionales de cualquier espacio, ahorrando tiempo de instalación y mano de obra.</p>
+            </article>
+            <article class="coleccion">
+                <h3>Corkcover</h3>
+                <p>Las inigualables propiedades del corcho son la base de este pavimento que combina sostenibilidad, diseño y magníficas prestaciones.</p>
+            </article>
+            <article class="coleccion">
+                <h3>Deckcover</h3>
+                <p>Garantía Plus Cover para pavimentos de exterior. Soluciones en WPC o madera maciza (ipe).</p>
+            </article>
+            <article class="coleccion">
+                <h3>Woodcover</h3>
+                <p>Nuestro signo de identidad. La evolución del pavimento de madera natural. La belleza atemporal de la madera optimizada al siglo XXI.</p>
+            </article>
+            <article class="coleccion">
+                <h3>Bamcover</h3>
+                <p>El bambú es ya una realidad y nuestra familia Bamcover incluye referencias para uso interior y exterior que se adaptan a todo tipo de ambientes.</p>
+            </article>
+            <article class="coleccion">
+                <h3>Undercover</h3>
+                <p>Las inigualables propiedades del corcho son la base de este pavimento que combina sostenibilidad, diseño y magníficas prestaciones.</p>
+            </article>
+        </section>
+        <section class="caracteristicas">
+            <h2>Calidad con patente</h2>
+            <ul>
+                <li>Garantía vitalicia limitada</li>
+                <li>Certificados internacionales</li>
+                <li>Fáciles de instalar</li>
+                <li>Comprometidos con el medio ambiente</li>
+                <li>Texturas reales</li>
+            </ul>
+        </section>
+        <section class="simulador">
+            <h2>Simulador de suelos</h2>
+            <p>Prueba como combina tu suelo con nuestro simulador.</p>
+        </section>
+        <section class="contacto">
+            <h2>Contacta con nosotros</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre">
+                <label for="apellido">Apellidos</label>
+                <input type="text" id="apellido" name="apellido">
+                <label for="email">Mail de contacto</label>
+                <input type="email" id="email" name="email">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono">
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>C/ Sudáfrica, 132 Complejo Mª Eugenia C/ Vial A, Nave 2. 11408 Jerez de la Frontera, Cádiz</p>
+        <p>+34 856 817 160</p>
+        <p><a href="mailto:atencionalcliente@pluscover.eu">atencionalcliente@pluscover.eu</a></p>
+        <p><a href="#">Política de cookies</a> | <a href="#">Aviso legal</a> | <a href="#">Política de privacidad</a></p>
+        <p>&copy; 2024 Pluscover. All Rights Reserved | Design by Skyditec</p>
+    </footer>
+</body>
+</html>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.intro, .novedades, .razones, .colecciones, .caracteristicas, .simulador, .contacto {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.colecciones {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.coleccion {
+    flex: 1 1 30%;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.coleccion h3 {
+    margin-top: 0;
+}
+
+.caracteristicas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.caracteristicas li::before {
+    content: "✔";
+    color: green;
+    margin-right: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, button {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer p a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+</style>
