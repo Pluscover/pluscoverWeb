@@ -4,5 +4,70 @@
 <nav class="flex justify-between py-8 px-6 items-center">
     <img src="Logo.svg" alt="" class="scale-50 -ml-10">
     <img src="logo2.svg" alt="" class="scale-50"> 
-    <img src="iconMenu.webp" alt="" class="scale-50">
+    <button id="btn"><img src="iconMenu.webp" alt="" class="scale-50"></button>
+    <div class="menu" id="menu">
+        <button id="close">X</button>
+        <a href="/" class="text-xl font-bold">Home</a>
+        <a href="/about" class="text-xl font-bold">About</a>
+        <a href="/contact" class="text-xl font-bold">Contact</a>
+        <a href="/blog" class="text-xl font-bold">Blog</a>
+        <a href="/projects" class="text-xl font-bold">Projects</a>
+        <a href="/resume" class="text-xl font-bold">Resume</a>
 </nav>
+
+<script>
+    const btn = document.getElementById("btn"); const menu = document.getElementById("menu");const close = document.getElementById("close");
+    btn.addEventListener("click", () => {
+       
+        menu.classList.add("hidden");
+        
+    });
+    
+        close.addEventListener("click", () => {
+            alert("Close");
+            menu.classList.remove("hidden");
+        });
+</script>
+
+<style>
+    --bg-color: #fff;
+    --btn-hover-color: #2c2c2c;
+    --btn-active-color: #3c3c3c;
+    nav {
+        background-color: var(--bg-color);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    #btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    #btn:hover {
+        background-color: var(--btn-hover-color);
+    }
+
+    #btn:active {
+        background-color: var(--btn-active-color);
+    }
+    .hidden {
+        height: 100vh;
+    }
+    .menu{
+        height: 0vh;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: -100vh;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        z-index: 10;
+    }
+</style>
